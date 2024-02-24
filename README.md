@@ -1,50 +1,36 @@
 # Macapagal_Bernardo_Debugging
-This is a repository about the JavaScript assignment where we will approach crushing bugs and implementing solutions.
+This is a repository about the JavaScript assignment where we will approach crushing bugs and implementing solutions. Drag and Drop Reference. Info Here
 
-# Drag and Drop Reference
+This repository demonstrates collaborative work to create a multimedia application known as a music mixer using design and motion tools as well as HTML, CSS, and JavaScript. We based this project of our Final Integrated Project regarding the brand redesign. Since our chosen brand is Quatro, all elements of the music mixer is themed off that. Thanks for stopping by!
 
-TODO: Write a project description
-
-## Contributing
-
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
-
-## Credits
-
-TODO: Write credits
-
-## License
-MIT
-
-# Macapagal_Bernardo_InteractiveSVG
-This is a repository about the JavaScript assignment in creating Interactive and animated SVG icons. In this homework, we are tasked to find, design, or create six SVG images and add animations and interactivity. The added icons can be based of the Final Integrated Project. Thanks for stopping by!
-
-![Interactive SVG Readme Photo](/images/InteractiveSVG_Readme.png)
-
-## Contributing :bookmark:
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
-
-## Usage :file_folder:
-Download the zipped code folder or fork the cloned repository to open the full file and view the website output with all associated code. The index.html file can be opened directly or the whole folder can be opened via VS Code.
+![Debugging Readme Photo](/images/readme_photo.jpg)
 
 ## Installation :wrench:
+
 There is no installation required at the moment.
 
-## History :clock8:
-Created on January 31, 2024
+## Usage :gear:
 
-## Credits :boy:
+Download the zipped code folder or fork the cloned repository to open the full file and view the website output with all associated code. The index.html file can be opened directly or the whole folder can be opened via VS Code.
+
+## Contributing :bookmark:
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
+
+## History :clock8:
+**Created on February 23, 2024**
+
+Updated on the following days:
+- February 24, 2024
+
+## Credits :writing_hand:
 __Officially Published by:__
 
-Bernardo B. Macapagal, Jr.
+Bernardo Macapagal
 
 ## License :page_facing_up:
 __MIT License__
