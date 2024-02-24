@@ -27,7 +27,7 @@ Download the zipped code folder or fork the cloned repository to open the full f
 Updated on the following days:
 - February 24, 2024
 
-## Credits :writing_hand:
+## Credits :pen:
 __Officially Published by:__
 
 Bernardo Macapagal
