@@ -1,7 +1,3 @@
-// variables always go at the top -> this is step 1
-// these are the connections that you're making to elements on the page 
-// use CSS selectors to make connections to elements with JavaScript
-
 // create a 1 to 1 connection with a variable -> querySelector("queryString")
 // let theButton = document.querySelector("#buttonOne");
 
@@ -11,13 +7,8 @@ let theButtons = document.querySelectorAll("#buttonHolder img"),
 	puzzleBoard = document.querySelector(".puzzle-board"),
 	puzzlePieces = document.querySelectorAll(".puzzle-pieces img"),
 	dropZones = document.querySelectorAll('.drop-zone'),
-	// store the dragged piece in a global variable
-	// because we need it in the handleDrop function
 	draggedPiece;
 
-// step 3
-// functionality always goes in the middle -> how do we want
-// the app to behave?
 function changeBGImage() {
 	// the `` is a JavaScript template string. It tells the JS enging to evaluate the expression
 	// inside the braces - run that little bit of code. In this case it's just pulling the ID of the
@@ -30,14 +21,11 @@ function changeBGImage() {
 
 function handleStartDrag() { 
 	console.log('started dragging this piece:', this);
-	// store a reference to the puzzle piece image that we're dragging
-	// so we can use it later and move it to a drop zone
 	draggedPiece = this;
 }
 
 function handleDragOver(e) { 
-	e.preventDefault(); // e is shorthand for event
-	// this overrides the default dragover behaviour
+	e.preventDefault();
 	console.log('dragged over me'); 
 }
 
@@ -50,14 +38,7 @@ function handleDrop(e) {
 	// into whatever drop zone we choose. appendChild means "add element to the container"
 	this.appendChild(draggedPiece);
 }
-// step 2
-// event handling always goes at the bottom => 
-// how do we want users to interact with our app
 
-// 1 to 1 event handling
-//theButton.addEventListener("click", changeBGImage);
-
-// 1 to many event handling
 // add event handling to each button in the collection of buttons, one at a time
 theButtons.forEach(button => button.addEventListener("click", changeBGImage));
 
