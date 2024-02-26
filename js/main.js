@@ -39,14 +39,10 @@ function handleDrop(e) {
 	this.appendChild(draggedPiece);
 }
 
-// add event handling to each button in the collection of buttons, one at a time
 theButtons.forEach(button => button.addEventListener("click", changeBGImage));
 
-// add the drag event handling to the puzzle pieces
 puzzlePieces.forEach(piece => piece.addEventListener("dragstart", handleStartDrag));
 
-// add the dragover AND the drop event handling to the drop zones
 dropZones.forEach(zone => zone.addEventListener("dragover", handleDragOver));
 
-// add the drop event handling
 dropZones.forEach(zone => zone.addEventListener("drop", handleDrop));
