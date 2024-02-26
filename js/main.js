@@ -10,8 +10,7 @@ let theButtons = document.querySelectorAll("#buttonHolder img"),
 	draggedPiece;
 
 function changeBGImage() {
-	// the `` is a JavaScript template string. It tells the JS enging to evaluate the expression
-	// inside the braces - run that little bit of code. In this case it's just pulling the ID of the
+	//  In this case it's just pulling the ID of the
 	// button we clicked on and putting it at the end of the image name (0, 1, 2, 3)
 	// and updating the background-image style of the puzzle board element.
 
@@ -40,9 +39,6 @@ function handleDrop(e) {
 }
 
 theButtons.forEach(button => button.addEventListener("click", changeBGImage));
-
 puzzlePieces.forEach(piece => piece.addEventListener("dragstart", handleStartDrag));
-
 dropZones.forEach(zone => zone.addEventListener("dragover", handleDragOver));
-
 dropZones.forEach(zone => zone.addEventListener("drop", handleDrop));
