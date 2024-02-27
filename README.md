@@ -3,7 +3,9 @@ This is a repository about the JavaScript assignment where we will approach crus
 
 ![Debugging Readme Photo](/images/readme_photo.png)
 
-## Instructions 
+## Instructions :computer_mouse:
+
+For reference regarding this assignment, the research document is located at the assets folder of this repository. It contains the client requirements for the project, user interactions, tracking, found bugs, solutions, implementations, and description for the provided bug fix. Short comments are also added to the code where the bug fix is located and a brief explanation is provided as per definition. It is recommended to cross-reference the code file and the reference document to get the full view.
 
 ## Installation :wrench:
 
