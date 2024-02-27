@@ -3,6 +3,8 @@ This is a repository about the JavaScript assignment where we will approach crus
 
 ![Debugging Readme Photo](/images/readme_photo.png)
 
+## Instructions 
+
 ## Installation :wrench:
 
 There is no installation required at the moment.
@@ -24,6 +26,9 @@ Download the zipped code folder or fork the cloned repository to open the full f
 
 Updated on the following days:
 - February 24, 2024
+- February 25, 2024
+- February 26, 2024
+- February 27, 2024
 
 ## Credits :pen:
 __Officially Published by:__
