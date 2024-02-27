@@ -42,7 +42,20 @@ function handleDrop(e) {
 	// More Information in the Reference Document located in the assets folder.
 }
 
+// Bug Fix #2 Test P1
+function resetBut() {
+	puzzleBoard.style.backgroundImage = {};
+	puzzlePieces.forEach = {};
+	dropZones.forEach = {};
+	console.log('Reset Test'); 
+}
+
 theButtons.forEach(button => button.addEventListener("click", changeBGImage));
 puzzlePieces.forEach(piece => piece.addEventListener("dragstart", handleStartDrag));
 dropZones.forEach(zone => zone.addEventListener("dragover", handleDragOver));
 dropZones.forEach(zone => zone.addEventListener("drop", handleDrop));
+
+// Bug Fix #2 Test P2
+// No need to add additional eventListeners just find
+const resetButton = document.getElementById('resetBut');
+resetButton.addEventListener('click', resetBut);
