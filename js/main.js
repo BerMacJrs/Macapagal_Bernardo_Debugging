@@ -35,18 +35,18 @@ function changeBGImage() {
 }
 
 function handleStartDrag() { 
-	console.log('started dragging this piece:', this);
+	console.log('Started Dragging this Piece:', this);
 	draggedPiece = this;
 }
 
 function handleDragOver(e) { 
 	e.preventDefault();
-	console.log('dragged over me'); 
+	console.log('Dragged Over Me'); 
 }
 
 function handleDrop(e) { 
 	e.preventDefault();
-	console.log('dropped something on me');
+	console.log('Dropped Something on Me');
 	if (!this.hasChildNodes()) {
 		this.appendChild(draggedPiece);
 	} else {

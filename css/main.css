@@ -66,7 +66,6 @@ body {
 .drop-zone {
 	width: 50%;
 	height: 50%;
-	/* border: thin dashed white; */
 	position: relative;
 }
 
@@ -76,7 +75,6 @@ body {
 	width: 90%;
 }
 
-/* set positioning for pieces so they align/snap together */
 .tl img { right: 0; bottom: 0; }
 .tr img { bottom: 0; }
 .bl img { right: 0; }
