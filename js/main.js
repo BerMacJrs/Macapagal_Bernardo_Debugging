@@ -3,15 +3,21 @@ let theButtons = document.querySelectorAll("#buttonHolder img"),
 	puzzleBoard = document.querySelector(".puzzle-board"),
 	puzzlePieces = document.querySelectorAll(".puzzle-pieces img"),
 	dropZones = document.querySelectorAll('.drop-zone'),
+	boardPieces = document.querySelector('.puzzle-pieces'),
+	resetButton = document.getElementById('resetBut'),
 	draggedPiece;
 
 function changeBGImage() {
-	//  In this case it's just pulling the ID of the
-	// button we clicked on and putting it at the end of the image name (0, 1, 2, 3)
-	// and updating the background-image style of the puzzle board element.
+	dropZones.forEach(zone => {
+	zone.innerHTML = '';});
 
-	// bug fix #2 should go here. it's at most 3 lines of JS code.
+	boardPieces.innerHTML = '';
+	puzzlePieces.forEach(piece => {
+		boardPieces.appendChild(piece);
+	})
+
 	puzzleBoard.style.backgroundImage = `url(images/backGround${this.id}.jpg)`;
+	// Bug Fix #2 Implemented
 }
 
 function handleStartDrag() { 
@@ -42,20 +48,22 @@ function handleDrop(e) {
 	// More Information in the Reference Document located in the assets folder.
 }
 
-// Bug Fix #2 Test P1
-function resetBut() {
-	puzzleBoard.style.backgroundImage = {};
-	puzzlePieces.forEach = {};
-	dropZones.forEach = {};
-	console.log('Reset Test'); 
+function fullReset() {
+	window.location = window.location.href;
+	// Continuation of Bug Fix #2. This function was created to just reset the entire
+	// page and not need additional attachment to the initial function. This enables
+	// the reset button feature for the puzzle game.
+
+	// More Information in the Reference Document located in the assets folder.
 }
 
 theButtons.forEach(button => button.addEventListener("click", changeBGImage));
 puzzlePieces.forEach(piece => piece.addEventListener("dragstart", handleStartDrag));
 dropZones.forEach(zone => zone.addEventListener("dragover", handleDragOver));
 dropZones.forEach(zone => zone.addEventListener("drop", handleDrop));
+resetButton.onclick = fullReset;
 
-// Bug Fix #2 Test P2
-// No need to add additional eventListeners just find
-const resetButton = document.getElementById('resetBut');
-resetButton.addEventListener('click', resetBut);
+// There are several ways to reset the puzzle board with Event Listeners
+// However, we can just add to a function and implement them with the already
+// present code that targets the same elements. Alternatively, the onclick direction
+// is just to make the resetButton functional as it requires to be called.
