@@ -1,7 +1,3 @@
-// create a 1 to 1 connection with a variable -> querySelector("queryString")
-// let theButton = document.querySelector("#buttonOne");
-
-// create a 1 to many connection with a variable -> querySelectorAll("queryString")
 let theButtons = document.querySelectorAll("#buttonHolder img"),
 	theHeading = document.querySelector("#headLine h1"),
 	puzzleBoard = document.querySelector(".puzzle-board"),
