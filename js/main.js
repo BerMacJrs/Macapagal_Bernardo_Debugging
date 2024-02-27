@@ -32,6 +32,13 @@ function handleDrop(e) {
 	} else {
 		console.log('Slot Occupied');
 	}
+	// Bug Fix #1 Implemented
+	// Added "if (!this.hasChildNodes())"
+	// This is to check if the drop zone has an element within it or child
+	// And to prevent other pieces from being placed when it is occupied.
+	// Also added code that says Slot Occupied in the console log for info.
+	
+	// More Information in the Reference Document located in the assets folder.
 }
 
 theButtons.forEach(button => button.addEventListener("click", changeBGImage));
