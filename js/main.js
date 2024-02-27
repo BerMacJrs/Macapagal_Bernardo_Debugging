@@ -34,14 +34,8 @@ function handleDrop(e) {
 	if (!this.hasChildNodes()) {
 		this.appendChild(draggedPiece);
 	} else {
-		console.log('Slot occupied');
+		console.log('Slot Occupied');
 	}
-	// TEST STAGE ONLY
-	// bug fix #1 should go here, and it's at most 3 lines of JS code
-
-	// this line is going to move the dragged piece from the left side of the board
-	// into whatever drop zone we choose. appendChild means "add element to the container"
-	
 }
 
 theButtons.forEach(button => button.addEventListener("click", changeBGImage));
