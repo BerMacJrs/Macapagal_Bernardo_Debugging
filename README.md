@@ -32,6 +32,18 @@ Updated on the following days:
 - February 26, 2024
 - February 27, 2024
 
+## References :notebook:
+
+These are the sources, references, and links for research report assignment. This only contains the basic websites and the full list of references is located at the research document in the assets folder. For any concerns regarding material, please get in touch.
+
+- https://developer.mozilla.org/en-US/docs/Web/API/Node/hasChildNodes
+- https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML
+- https://developer.mozilla.org/en-US/docs/Web/API/Location/reload
+- https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
+- https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+- https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+
 ## Credits :pen:
 __Officially Published by:__
 
