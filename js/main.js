@@ -5,6 +5,11 @@ let theButtons = document.querySelectorAll("#buttonHolder img"),
 	dropZones = document.querySelectorAll('.drop-zone'),
 	boardPieces = document.querySelector('.puzzle-pieces'),
 	resetButton = document.getElementById('resetBut'),
+	// Initial code for Bug Fix #2, declared variables for resetting the board.
+	// The boardPieces declaration targets the individual puzzle pieces in the HTML.
+	// The resetButton declarations targets the <button> element in the HTML.
+
+	// More Information in the Reference Document located in the assets folder.
 	draggedPiece;
 
 function changeBGImage() {
@@ -18,6 +23,15 @@ function changeBGImage() {
 
 	puzzleBoard.style.backgroundImage = `url(images/backGround${this.id}.jpg)`;
 	// Bug Fix #2 Implemented
+
+	// For this solution, I targeted the dropzones and specific puzzle pieces
+	// and resetted them with '' for it to return back to its original placement.
+	// innerHTML was also used to find the specific elements in the HTMl directly.
+
+	// Targets was found using the new declared variables above to find the classes
+	// and IDs and reset them with the code stated above.
+
+	// More Information in the Reference Document located in the assets folder.
 }
 
 function handleStartDrag() { 
@@ -49,10 +63,11 @@ function handleDrop(e) {
 }
 
 function fullReset() {
-	window.location = window.location.href;
+	location.reload();
 	// Continuation of Bug Fix #2. This function was created to just reset the entire
 	// page and not need additional attachment to the initial function. This enables
-	// the reset button feature for the puzzle game.
+	// the reset button feature for the puzzle game. Additionally, this can be added
+	// directly to the eventListener below, but separated for clarity.
 
 	// More Information in the Reference Document located in the assets folder.
 }
@@ -65,5 +80,5 @@ resetButton.onclick = fullReset;
 
 // There are several ways to reset the puzzle board with Event Listeners
 // However, we can just add to a function and implement them with the already
-// present code that targets the same elements. Alternatively, the onclick direction
+// present code that targets the same elements. Alternatively, the on-click direction
 // is just to make the resetButton functional as it requires to be called.
